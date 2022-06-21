@@ -15,7 +15,7 @@ with open('extension.txt')as ext:
 f = Fernet(key)
 
 
-with open('file_encrypted.nigus', 'rb')as encrypted_file:
+with open('file_encrypted.rova', 'rb')as encrypted_file:
     encrypted = encrypted_file.read()
 decrypted = f.decrypt(encrypted)
 with open('decrypted'+ extf, 'wb')as decrypted_file:
